@@ -15,3 +15,6 @@ restart:
 	@make down
 	@make up
 
+.PHONY: app.logs
+app.logs:
+	docker compose logs -f app
